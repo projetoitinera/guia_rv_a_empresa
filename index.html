@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Recibo Verde à Empresa — Guia Fiscal 2026 | Itinera</title>
+<meta name="description" content="O guia completo e atualizado a 2026 para freelancers em Portugal: dos recibos verdes à decisão de abrir empresa, com simulações reais de IRS e Segurança Social.">
+
+<!-- ============================================================
+     PÁGINA DE VENDAS — Projeto Itinera (para GitHub Pages)
+     CONFIGURAÇÃO RÁPIDA (procura por "CONFIG" abaixo):
+       1) LINK_CHECKOUT  → o teu link de checkout da Hotmart
+       2) META_PIXEL_ID  → ID do Meta Pixel (deixa "" se ainda não tens)
+       3) GA4_ID         → ID do Google Analytics 4 (deixa "" se ainda não tens)
+     Publicar: coloca este ficheiro como "index.html" no repositório GitHub Pages.
+     ============================================================ -->
+
+<style>
+  :root{
+    --navy:#14304b; --navy2:#0f2f4c; --teal:#1f6b6b; --teal-d:#185656; --mint:#7fd1c4;
+    --ink:#243038; --muted:#5a6a76; --line:#e6ecf0; --bg:#ffffff; --soft:#f5f8fa;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:'Helvetica Neue',Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--bg);font-size:17px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px;}
+  h1,h2,h3{color:var(--navy);line-height:1.22;}
+  h1{font-size:42px;margin:0 0 16px;}
+  h2{font-size:28px;margin:0 0 16px;}
+  h3{font-size:19px;margin:0 0 6px;color:var(--teal);}
+  p{margin:13px 0;}
+  a{color:var(--teal);}
+  .kicker{letter-spacing:3px;text-transform:uppercase;font-size:13px;font-weight:700;color:var(--mint);}
+  .section{padding:58px 0;border-top:1px solid var(--line);}
+  .section:first-of-type{border-top:none;}
+
+  /* LOGO */
+  .brandmark .bm-top{font-size:12px;letter-spacing:6px;color:var(--mint);font-weight:700;}
+  .brandmark .bm-main{font-family:Georgia,'Times New Roman',serif;font-size:32px;letter-spacing:7px;color:#fff;line-height:1;margin-top:4px;}
+
+  /* HERO */
+  .hero{background:linear-gradient(150deg,#0f2f4c 0%,#16455f 55%,#1f6b6b 100%);color:#fff;padding:64px 0 70px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(127,209,196,.16),transparent 70%);}
+  .hero .brandmark{margin-bottom:26px;}
+  .hero h1{color:#fff;max-width:660px;}
+  .hero .sub{font-size:20px;color:#d3e7ec;max-width:600px;}
+  .hero .trust{margin-top:24px;font-size:14px;color:#9fc0c9;}
+  .hero .trust span{display:inline-block;margin:4px 16px 0 0;}
+
+  /* BOTÕES com micro-animação */
+  .cta-btn{display:inline-block;background:var(--mint);color:#0f2f4c !important;font-weight:800;font-size:18px;
+    padding:17px 32px;border-radius:10px;text-decoration:none;margin-top:26px;
+    box-shadow:0 8px 22px rgba(0,0,0,.18);transition:transform .16s ease, box-shadow .16s ease, background .2s ease;}
+  .cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.26);background:#93dccf;}
+  .cta-btn:active{transform:translateY(0);}
+  .cta-btn.solid{background:var(--teal);color:#fff !important;}
+  .cta-btn.solid:hover{background:var(--teal-d);}
+  .cta-note{font-size:13px;color:#9fc0c9;margin-top:11px;}
+  .center{text-align:center;}
+
+  .lead{font-size:19px;color:#34454f;}
+  ul.clean{list-style:none;padding:0;margin:16px 0;}
+  ul.clean li{position:relative;padding:9px 0 9px 32px;border-bottom:1px solid var(--line);}
+  ul.clean li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800;}
+  .cardgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+  .card{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px 22px;transition:transform .18s ease, box-shadow .18s ease;}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,48,75,.10);}
+  .card h3{margin-top:0;}
+  .quoteline{border-left:4px solid var(--mint);background:var(--soft);padding:16px 20px;border-radius:0 10px 10px 0;margin:22px 0;font-size:18px;}
+  .who{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;}
+  .who .col{background:var(--soft);border-radius:12px;padding:20px 22px;}
+  .who .col.no{background:#fdf4f3;}
+  .who h3{margin-top:0;}
+
+  /* PREÇO */
+  .pricebox{background:var(--soft);border:2px solid var(--teal);border-radius:16px;padding:36px 28px;text-align:center;margin:26px 0;}
+  .pricebox .old{color:var(--muted);text-decoration:line-through;font-size:21px;}
+  .pricebox .now{font-size:56px;font-weight:800;color:var(--navy);line-height:1;margin:6px 0;}
+  .pricebox .cap{color:var(--muted);font-size:15px;}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:#eafaf3;color:#1f7a52;border:1px solid #bfe8d6;border-radius:30px;padding:7px 16px;font-size:14px;font-weight:700;margin-top:16px;}
+
+  /* FAQ */
+  .faq details{border:1px solid var(--line);border-radius:10px;margin:10px 0;background:#fff;overflow:hidden;}
+  .faq summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .chev{transition:transform .25s ease;color:var(--teal);font-size:20px;flex:none;}
+  .faq details[open] summary .chev{transform:rotate(45deg);}
+  .faq .ans{padding:0 18px 16px;color:#3a4a56;}
+
+  /* BARRA FIXA */
+  .stickybar{position:fixed;left:0;right:0;bottom:0;background:rgba(15,47,76,.97);backdrop-filter:blur(6px);
+    color:#fff;transform:translateY(110%);transition:transform .35s ease;z-index:50;box-shadow:0 -6px 24px rgba(0,0,0,.18);}
+  .stickybar.show{transform:translateY(0);}
+  .stickybar .inner{max-width:760px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .stickybar .sb-name{font-family:Georgia,serif;letter-spacing:2px;font-size:15px;}
+  .stickybar .sb-price{color:var(--mint);font-weight:700;font-size:14px;}
+  .stickybar a{margin:0;padding:12px 22px;font-size:15px;}
+  @media(max-width:560px){.stickybar .sb-text{display:none;}.stickybar .inner{justify-content:center;}}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* COOKIES */
+  .cookie{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;background:#fff;
+    border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 40px rgba(15,47,76,.22);padding:18px 20px;z-index:60;display:none;}
+  .cookie p{margin:0 0 12px;font-size:14px;color:var(--ink);}
+  .cookie .row{display:flex;gap:10px;flex-wrap:wrap;}
+  .cookie button{border:none;border-radius:8px;padding:10px 18px;font-weight:700;cursor:pointer;font-size:14px;}
+  .cookie .acc{background:var(--teal);color:#fff;}
+  .cookie .rej{background:#eef2f5;color:var(--ink);}
+
+  .footer{background:var(--navy2);color:#9fc0c9;font-size:13px;padding:34px 0;margin-top:0;line-height:1.6;}
+  .footer a{color:var(--mint);}
+  @media(max-width:640px){
+    body{font-size:16px;} h1{font-size:32px;} h2{font-size:23px;}
+    .cardgrid,.who{grid-template-columns:1fr;} .hero{padding:48px 0 52px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== BARRA FIXA ===================== -->
+<div class="stickybar" id="stickybar">
+  <div class="inner">
+    <div class="sb-text">
+      <div class="sb-name">ITINERA</div>
+      <div class="sb-price">Do Recibo Verde à Empresa · €27</div>
+    </div>
+    <a href="#comprar" class="cta-btn solid js-cta">Comprar agora</a>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brandmark"><div class="bm-top">PROJETO</div><div class="bm-main">ITINERA</div></div>
+    <div class="kicker">Guia prático para freelancers · Portugal · 2026</div>
+    <h1>Sabes mesmo se estás a pagar impostos a mais?</h1>
+    <p class="sub">O guia completo para freelancers, consultores e profissionais liberais — dos recibos verdes à decisão de abrir empresa. Com simulações reais, passo a passo e linguagem que se percebe.</p>
+    <a href="#comprar" class="cta-btn js-scroll">Quero o guia completo</a>
+    <div class="cta-note">PDF · 46 páginas · atualizado a 2026 · acesso imediato</div>
+    <div class="trust">
+      <span>✓ Valores 2026 verificados</span>
+      <span>✓ Baseado em fontes oficiais</span>
+      <span>✓ Sem contabilês</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- PROBLEMA -->
+  <section class="section"><div class="wrap reveal">
+    <h2>Trabalhar por conta própria não devia ser um labirinto</h2>
+    <p class="lead">Recibos verdes, ENI, regime simplificado, coeficiente 0,75, Artigo 53.º, transparência fiscal... Ninguém te ensinou isto — e cada decisão mal tomada custa dinheiro real.</p>
+    <p>Há dois erros que se pagam caro. Ficar anos a recibos verdes a entregar imposto a mais sem saber que havia alternativa. Ou abrir uma empresa à pressa, a achar que vai poupar, e descobrir que afinal paga o mesmo (ou mais) com burocracia acrescida. A diferença entre acertar e falhar nesta decisão vale, muitas vezes, <strong>milhares de euros por ano</strong>.</p>
+    <div class="quoteline">Este guia foi escrito para que tomes essas decisões com <strong>números à frente</strong>, e não a partir de mitos repetidos na internet.</div>
+  </div></section>
+
+  <!-- O QUE É -->
+  <section class="section"><div class="wrap reveal">
+    <h2>O que vais ter em mãos</h2>
+    <p>Um documento de 46 páginas, direto e prático, que te acompanha desde o primeiro recibo verde até à constituição de uma empresa — e te mostra, com exemplos numéricos, qual o caminho que te deixa com mais dinheiro no bolso.</p>
+    <ul class="clean">
+      <li>As <strong>três formas de trabalhar por conta própria</strong> e quando muda compensar passar de uma para a outra.</li>
+      <li><strong>IRS, IVA e Segurança Social</strong> explicados com exemplos reais de 2026, por nível de faturação.</li>
+      <li><strong>Simulações completas recibos verdes vs. empresa</strong>, com a Segurança Social incluída.</li>
+      <li>O regime de <strong>transparência fiscal</strong>: porque é que abrir empresa pode <em>não</em> poupar imposto.</li>
+      <li>As <strong>despesas que só uma empresa deduz</strong> e o «número mágico» a partir do qual a empresa compensa.</li>
+      <li><strong>Passo a passo</strong> para abrir atividade e constituir a unipessoal, com checklists.</li>
+      <li>Como <strong>faturar a clientes estrangeiros</strong> sem erros de IVA, e o regime <strong>IFICI</strong> (ex-NHR).</li>
+      <li><strong>Calendário fiscal 2026</strong>, glossário e fontes oficiais.</li>
+    </ul>
+  </div></section>
+
+  <!-- DIFERENCIADORES -->
+  <section class="section"><div class="wrap reveal">
+    <h2>Porque é diferente dos guias gratuitos</h2>
+    <div class="cardgrid">
+      <div class="card"><h3>Decisões, não definições</h3><p>A maioria explica "o que é". Este responde à pergunta que interessa: <strong>o que me fica mais barato?</strong></p></div>
+      <div class="card"><h3>Com a Segurança Social</h3><p>As comparações que circulam por aí ignoram a Segurança Social. As nossas simulações incluem-na.</p></div>
+      <div class="card"><h3>Honesto sobre os senões</h3><p>Mostramos quando a empresa <em>não</em> compensa e onde estão as armadilhas.</p></div>
+      <div class="card"><h3>Atualizado e referenciado</h3><p>Valores de 2026 verificados, com as fontes oficiais indicadas. Sem números inventados.</p></div>
+    </div>
+  </div></section>
+
+  <!-- COMO FOI FEITO -->
+  <section class="section"><div class="wrap reveal">
+    <h2>Como este guia foi feito</h2>
+    <p>Este guia é o resultado de investigação e compilação, feita por quem teve de passar por este processo na pele e precisou de o entender a fundo. Não é aconselhamento de um gabinete nem opinião avulsa.</p>
+    <p>Toda a informação foi confirmada com as <strong>fontes oficiais</strong> — Código do IRS, do IVA e do IRC, Portal das Finanças, Segurança Social e Ordem dos Contabilistas Certificados — e os valores verificados para 2026. O objetivo é reunir, num único documento claro e atual, aquilo que anda disperso e mal explicado.</p>
+  </div></section>
+
+  <!-- PARA QUEM -->
+  <section class="section"><div class="wrap reveal">
+    <h2>É para ti?</h2>
+    <div class="who">
+      <div class="col"><h3>Sim, se...</h3><ul class="clean">
+        <li>Trabalhas (ou vais trabalhar) por conta própria em Portugal</li>
+        <li>Já emites recibos verdes mas não dominas o IRS, IVA e SS</li>
+        <li>Estás a ponderar abrir empresa</li>
+        <li>És estrangeiro ou novo residente e precisas de entender o sistema</li>
+      </ul></div>
+      <div class="col no"><h3>Talvez não, se...</h3><ul class="clean">
+        <li>Procuras aconselhamento à medida do teu caso (para isso, um contabilista)</li>
+        <li>Queres atalhos ou esquemas — aqui só há otimização legal</li>
+      </ul></div>
+    </div>
+  </div></section>
+
+  <!-- PREÇO -->
+  <section class="section" id="comprar"><div class="wrap reveal center">
+    <h2>Decide com números, não com mitos</h2>
+    <div class="pricebox">
+      <div class="old">€37</div>
+      <div class="now">€27</div>
+      <div class="cap">PDF · 46 páginas · acesso imediato · edição 2026</div>
+      <!-- CONFIG: substitui o href pelo teu LINK_CHECKOUT da Hotmart -->
+      <a href="LINK_CHECKOUT" class="cta-btn solid js-buy">Comprar agora</a>
+      <div class="badge">✓ Garantia de devolução (confirma o prazo no checkout)</div>
+      <div style="color:var(--muted);font-size:13px;margin-top:12px;">Pagamento seguro via Hotmart</div>
+    </div>
+    <p style="color:var(--muted);font-size:15px;">Menos do que uma consulta de contabilista. Paga-se a si próprio no primeiro erro fiscal que te evitar.</p>
+  </div></section>
+
+  <!-- FAQ -->
+  <section class="section faq"><div class="wrap reveal">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Não percebo nada de fiscalidade. Vou conseguir acompanhar?<span class="chev">+</span></summary><div class="ans">Sim. Está escrito em linguagem corrente, com exemplos. Não precisas de qualquer base de contabilidade.</div></details>
+    <details><summary>Já tenho contabilista. Vale a pena?<span class="chev">+</span></summary><div class="ans">Vale — porque te ajuda a fazer as perguntas certas e a perceber as decisões antes de as tomar. Não substitui o teu contabilista; torna-te um cliente mais informado.</div></details>
+    <details><summary>Serve para qualquer atividade?<span class="chev">+</span></summary><div class="ans">É pensado para prestadores de serviços e profissionais liberais (consultores, engenheiros, designers, programadores, etc.), mas os princípios aplicam-se de forma ampla.</div></details>
+    <details><summary>E se a lei mudar?<span class="chev">+</span></summary><div class="ans">A edição é de 2026 e indica as fontes para confirmares. Subscrevendo a lista, avisamos-te quando houver alterações relevantes.</div></details>
+    <details><summary>Como recebo o guia?<span class="chev">+</span></summary><div class="ans">É um PDF com acesso imediato após a compra, através da Hotmart. Lês no computador, tablet ou telemóvel.</div></details>
+  </div></section>
+
+  <!-- CTA FINAL -->
+  <section class="section"><div class="wrap reveal center">
+    <h2>Decide com confiança</h2>
+    <p class="lead" style="max-width:560px;margin:0 auto 6px;">Tudo o que precisas para escolher entre recibos verdes e empresa — e agir sem erros — num só documento.</p>
+    <a href="#comprar" class="cta-btn js-scroll">Quero o guia completo</a>
+    <div class="cta-note" style="color:var(--muted);">Acesso imediato · 46 páginas · 2026</div>
+  </div></section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer"><div class="wrap">
+  <p><strong style="color:var(--mint);">Itinera</strong> · Guias para cada caminho · © 2026 — Todos os direitos reservados. ·
+     <a href="#">Política de Privacidade</a> · <a href="#">Termos</a> · Contacto: <a href="mailto:projeto.itinera@gmail.com">projeto.itinera@gmail.com</a></p>
+  <p>Documento de carácter informativo e educativo. Não constitui aconselhamento fiscal, contabilístico, jurídico ou financeiro, nem cria qualquer relação profissional. Confirma sempre nos portais oficiais da AT e da Segurança Social e consulta um Contabilista Certificado (CC/TOC) antes de qualquer decisão.</p>
+</div></footer>
+
+<!-- ===================== BANNER DE COOKIES ===================== -->
+<div class="cookie" id="cookie">
+  <p>Usamos cookies de medição (Meta e Google) para melhorar a página e os anúncios. Podes aceitar ou recusar. Ver a <a href="#">Política de Privacidade</a>.</p>
+  <div class="row">
+    <button class="acc" id="ck-acc">Aceitar</button>
+    <button class="rej" id="ck-rej">Recusar</button>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   CONFIG — preenche quando tiveres os dados
+   ============================================================ */
+const CONFIG = {
+  META_PIXEL_ID: "",   // ex: "1234567890123456"  (deixa "" se ainda não tens)
+  GA4_ID: ""           // ex: "G-XXXXXXXXXX"        (deixa "" se ainda não tens)
+};
+
+/* ---------- Animações ao rolar (reveal) ---------- */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- Barra fixa: aparece depois do hero ---------- */
+const bar=document.getElementById('stickybar');
+const hero=document.querySelector('.hero');
+window.addEventListener('scroll',()=>{
+  const past = window.scrollY > (hero.offsetHeight - 60);
+  bar.classList.toggle('show', past);
+});
+
+/* ---------- Consentimento de cookies ---------- */
+const cookieEl=document.getElementById('cookie');
+function consentGiven(){ return localStorage.getItem('itinera_consent'); }
+function showCookie(){ if(!consentGiven()) cookieEl.style.display='block'; }
+document.getElementById('ck-acc').onclick=()=>{ localStorage.setItem('itinera_consent','yes'); cookieEl.style.display='none'; loadPixels(); };
+document.getElementById('ck-rej').onclick=()=>{ localStorage.setItem('itinera_consent','no'); cookieEl.style.display='none'; };
+showCookie();
+if(consentGiven()==='yes') loadPixels();
+
+/* ---------- Pixels (só após consentimento) ---------- */
+function loadPixels(){
+  // Meta Pixel
+  if(CONFIG.META_PIXEL_ID){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.META_PIXEL_ID); fbq('track', 'PageView');
+  }
+  // Google Analytics 4
+  if(CONFIG.GA4_ID){
+    var g=document.createElement('script');g.async=true;
+    g.src='https://www.googletagmanager.com/gtag/js?id='+CONFIG.GA4_ID;
+    document.head.appendChild(g);
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());gtag('config',CONFIG.GA4_ID);
+  }
+}
+
+/* ---------- Eventos de conversão no clique de compra ---------- */
+function track(name){
+  if(consentGiven()!=='yes')return;
+  if(window.fbq) fbq('track', name);          // ex: InitiateCheckout
+  if(window.gtag) gtag('event', name);
+}
+document.querySelectorAll('.js-buy').forEach(b=>b.addEventListener('click',()=>track('InitiateCheckout')));
+
+/* ---------- Scroll suave dos CTAs internos (fallback) ---------- */
+document.querySelectorAll('a[href="#comprar"]').forEach(a=>{
+  a.addEventListener('click',(e)=>{ const t=document.getElementById('comprar'); if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});} });
+});
+</script>
+</body>
+</html>
