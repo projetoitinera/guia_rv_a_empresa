@@ -112,6 +112,8 @@
 
   .footer{background:var(--navy2);color:#9fc0c9;font-size:13px;padding:34px 0;margin-top:0;line-height:1.6;}
   .footer a{color:var(--mint);}
+  /* "Talvez não" com cruz vermelha (parte negativa) */
+  .who .col.no ul.clean li::before{content:"✗";color:#c0392b;}
   @media(max-width:640px){
     body{font-size:16px;} h1{font-size:32px;} h2{font-size:23px;}
     .cardgrid,.who{grid-template-columns:1fr;} .hero{padding:48px 0 52px;}
@@ -137,7 +139,7 @@
     <div class="brandmark"><div class="bm-top">PROJETO</div><div class="bm-main">ITINERA</div></div>
     <div class="kicker">Guia prático para freelancers · Portugal · 2026</div>
     <h1>Sabes mesmo se estás a pagar impostos a mais?</h1>
-    <p class="sub">O guia completo para freelancers, consultores e profissionais liberais — dos recibos verdes à decisão de abrir empresa. Com simulações reais, passo a passo e linguagem que se percebe.</p>
+    <p class="sub"><strong style="color:#fff">«Do Recibo Verde à Empresa»</strong> — o guia completo para freelancers, consultores e profissionais liberais, dos recibos verdes à decisão de abrir empresa. Com simulações reais, passo a passo e linguagem que se percebe.</p>
     <a href="#comprar" class="cta-btn js-scroll">Quero o guia completo</a>
     <div class="cta-note">PDF · 46 páginas · atualizado a 2026 · acesso imediato</div>
     <div class="trust">
@@ -212,13 +214,17 @@
   <section class="section" id="comprar"><div class="wrap reveal center">
     <h2>Decide com números, não com mitos</h2>
     <div class="pricebox">
-      <div class="old">€37</div>
+      <div style="font-family:Georgia,'Times New Roman',serif;font-size:19px;color:var(--navy);margin-bottom:10px;">Do Recibo Verde à Empresa</div>
+      <div style="color:var(--muted);font-size:14px;">O que pouparias com um só erro fiscal evitado: centenas ou milhares de euros por ano.</div>
+      <div style="font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:24px;margin-bottom:0;">Preço base</div>
+      <div class="old">€49</div>
+      <div style="font-size:13px;color:var(--teal);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:22px;">Agora</div>
       <div class="now">€27</div>
       <div class="cap">PDF · 46 páginas · acesso imediato · edição 2026</div>
       <!-- CONFIG: substitui o href pelo teu LINK_CHECKOUT da Hotmart -->
-      <a href="LINK_CHECKOUT" class="cta-btn solid js-buy">Comprar agora</a>
-      <div class="badge">✓ Garantia de devolução (confirma o prazo no checkout)</div>
-      <div style="color:var(--muted);font-size:13px;margin-top:12px;">Pagamento seguro via Hotmart</div>
+      <a href="https://pay.hotmart.com/P106229224C" class="cta-btn solid js-buy" style="display:inline-block;">Comprar agora</a>
+      <div style="margin-top:16px;"><span class="badge">✓ Garantia de devolução de 15 dias</span></div>
+      <div style="color:var(--muted);font-size:13px;margin-top:10px;">Pagamento seguro via Hotmart</div>
     </div>
     <p style="color:var(--muted);font-size:15px;">Menos do que uma consulta de contabilista. Paga-se a si próprio no primeiro erro fiscal que te evitar.</p>
   </div></section>
@@ -244,14 +250,14 @@
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer"><div class="wrap">
-  <p><strong style="color:var(--mint);">Itinera</strong> · Guias para cada caminho · © 2026 — Todos os direitos reservados. ·
-     <a href="#">Política de Privacidade</a> · <a href="#">Termos</a> · Contacto: <a href="mailto:projeto.itinera@gmail.com">projeto.itinera@gmail.com</a></p>
-  <p>Documento de carácter informativo e educativo. Não constitui aconselhamento fiscal, contabilístico, jurídico ou financeiro, nem cria qualquer relação profissional. Confirma sempre nos portais oficiais da AT e da Segurança Social e consulta um Contabilista Certificado (CC/TOC) antes de qualquer decisão.</p>
+  <p><strong style="color:var(--mint);">Itinera</strong> · © 2026 — Todos os direitos reservados. ·
+     <a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos</a> · Contacto: <a href="mailto:projeto.itinera@gmail.com">projeto.itinera@gmail.com</a></p>
+  <p>Documento de carácter informativo. Não constitui aconselhamento fiscal, contabilístico, jurídico ou financeiro, nem cria qualquer relação profissional. Confirma sempre nos portais oficiais da AT e da Segurança Social e consulta um Contabilista Certificado (CC/TOC) antes de qualquer decisão.</p>
 </div></footer>
 
 <!-- ===================== BANNER DE COOKIES ===================== -->
 <div class="cookie" id="cookie">
-  <p>Usamos cookies de medição (Meta e Google) para melhorar a página e os anúncios. Podes aceitar ou recusar. Ver a <a href="#">Política de Privacidade</a>.</p>
+  <p>Usamos cookies de medição para melhorar a página e os anúncios. Podes aceitar ou recusar. Ver a <a href="privacidade.html">Política de Privacidade</a>.</p>
   <div class="row">
     <button class="acc" id="ck-acc">Aceitar</button>
     <button class="rej" id="ck-rej">Recusar</button>
